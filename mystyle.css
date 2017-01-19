@@ -27,12 +27,6 @@ div {
 
 #diff-col .left-col{
     width: 30%;
-    padding: 20px;
-    background: lightyellow;
-}
-
-#diff-col .left-col{
-    width: 30%;
     padding: 10px;
     background: lightyellow;
 }
