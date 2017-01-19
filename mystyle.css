@@ -18,11 +18,11 @@ div {
     
 #diff-col{
     font-family: sans-serif;
-    -webkit-column-count: 3; /*Chrome , Safari, Opera */
-    -mor-column-count: 3; /*Firefox */
-    column-count: 3;
-    -webkit-column-gap: 50px;
-    -moz-column-gap: 50px; /*Firefox*/
+   -webkit-column-count: 1; /*Chrome , Safari, Opera */
+    -mor-column-count: 1; /*Firefox */
+    column-count: 1;
+    -webkit-column-gap: 20px;
+    -moz-column-gap: 20px; /*Firefox*/
 }
 
 #diff-col .left-col{
