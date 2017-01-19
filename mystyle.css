@@ -1,48 +1,51 @@
 body{
-    background-color: antiquewhite;
+    background-color: aliceblue;
+    background-image: url(http://www.walldevil.com/wallpapers/w15/blue-wind.jpg);
+    background-size: cover;
 }
 
 h1{
-    font-family: arial;
-    color: palevioletred;
+    font-family: Palatino;
+    font-size: 48px;
+    color: navy;
     text-align: center;
 }
 
 div {
-    font-family: sans-serif;
 }
 
 #intro{
     font-family: calibri;
-    background-color: antiquewhite;
+    font-size: 20px;
 }
     
 #diff-col{
-    font-family: sans-serif;
+    font-family: "Trebuchet MS";
+    font-size: 16px;
     -webkit-column-count: 3; /*Chrome , Safari, Opera */
     -moz-column-count: 3; /*Firefox */
     column-count: 3;
-    -webkit-column-gap: 20px;
-    -moz-column-gap: 20px; /*Firefox*/
+    -webkit-column-gap: 10px;
+    -moz-column-gap: 10px; /*Firefox*/
     column-gap: 10px;
 }
 
 #diff-col .left-col{
     width: 95%;
     padding: 10px;
-    background: lightyellow;
+    background: #FADBD8; 
 }
 
 #diff-col .mid-col{
     width: 95%;
     padding: 10px;
-    background: lightgray;
+    background: #EBDEF0;
 }
 
 #diff-col .right-col{
     width: 95%;
     padding: 10px;
-    background: lightgreen;
+    background: #D6EAF8;
 }
 
 
