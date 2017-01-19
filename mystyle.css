@@ -10,12 +10,6 @@ h1{
 
 div {
     font-family: sans-serif;
-    -webkit-column-count: 3; /*Chrome , Safari, Opera */
-    -mor-column-count: 3; /*Firefox */
-    column-count: 3;
-    -webkit-column-gap: 50px;
-    -moz-column-gap: 50px; /*Firefox*/
-    column-gap: 50pxl
 }
 
 #columns{
@@ -23,6 +17,12 @@ div {
 }
     
 #diff-col{
+    font-family: sans-serif;
+    -webkit-column-count: 3; /*Chrome , Safari, Opera */
+    -mor-column-count: 3; /*Firefox */
+    column-count: 3;
+    -webkit-column-gap: 50px;
+    -moz-column-gap: 50px; /*Firefox*/
 }
 
 #diff-col .left-col{
