@@ -12,8 +12,9 @@ div {
     font-family: sans-serif;
 }
 
-#columns{
-    background-color: lightblue;
+#intro{
+    font-family: calibri;
+    background-color: antiquewhite;
 }
     
 #diff-col{
