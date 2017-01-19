@@ -18,27 +18,28 @@ div {
     
 #diff-col{
     font-family: sans-serif;
-   -webkit-column-count: 3; /*Chrome , Safari, Opera */
-    -mor-column-count: 3; /*Firefox */
+    -webkit-column-count: 3; /*Chrome , Safari, Opera */
+    -moz-column-count: 3; /*Firefox */
     column-count: 3;
     -webkit-column-gap: 20px;
     -moz-column-gap: 20px; /*Firefox*/
+    column-gap: 10px;
 }
 
 #diff-col .left-col{
-    width: 30%;
+    width: 95%;
     padding: 10px;
     background: lightyellow;
 }
 
 #diff-col .mid-col{
-    width: 30%;
+    width: 95%;
     padding: 10px;
     background: lightgray;
 }
 
 #diff-col .right-col{
-    width: 30%;
+    width: 95%;
     padding: 10px;
     background: lightgreen;
 }
