@@ -28,24 +28,23 @@ div {
     -webkit-column-gap: 10px;
     -moz-column-gap: 10px; /*Firefox*/
     column-gap: 10px;
+    width: 95%;
+    padding 30px;
 }
 
 #diff-col .left-col{
-    width: 95%;
-    padding: 10px;
     background: #FADBD8; 
+    height: 350px;
 }
 
 #diff-col .mid-col{
-    width: 95%;
-    padding: 10px;
     background: #EBDEF0;
+    height: 350px;
 }
 
 #diff-col .right-col{
-    width: 95%;
-    padding: 10px;
     background: #D6EAF8;
+    height: 350px;
 }
 
 
