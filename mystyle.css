@@ -28,23 +28,26 @@ div {
     -webkit-column-gap: 10px;
     -moz-column-gap: 10px; /*Firefox*/
     column-gap: 10px;
-    width: 95%;
     padding 30px;
 }
 
 #diff-col .left-col{
     background: #FADBD8; 
-    height: 350px;
+    height: 500px;
 }
 
 #diff-col .mid-col{
     background: #EBDEF0;
-    height: 350px;
+    height: 500px;
 }
 
 #diff-col .right-col{
     background: #D6EAF8;
-    height: 350px;
+    height: 500px;
+}
+
+.bluetext {
+    color: blue;
 }
 
 
