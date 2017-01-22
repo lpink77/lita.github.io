@@ -28,7 +28,7 @@ div {
     -webkit-column-gap: 10px;
     -moz-column-gap: 10px; /*Firefox*/
     column-gap: 10px;
-    padding 30px;
+    padding: 5px;
 }
 
 #diff-col .left-col{
