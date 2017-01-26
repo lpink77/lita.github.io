@@ -1,0 +1,63 @@
+body {
+    background-color: lightblue;
+    padding:10px;
+}
+
+h1 {
+    background-image: url(http://www.walldevil.com/wallpapers/w15/blue-wind.jpg);
+    background-size: cover;
+    font-family: Verdana;
+    font-size: 48px;
+    color: navy;
+    text-align: center;
+    overflow-y;
+}
+
+#intro {
+    font-family: Verdana;
+    font-size: 20px;
+}
+
+#diff-col {
+    font-family: "Trebuchet MS";
+    font-size: 16px;
+}
+
+#diff-col .left-col {
+    float:left;
+    width:30%;
+    margin-left:1%;
+    background: #FADBD8;
+    height: 500px;
+    padding: 15px;
+}
+
+#diff-col .mid-col {
+    float:left;
+    width:30%;
+    margin-left:1%;
+    background: #EBDEF0;
+    height: 500px;
+    padding: 15px;
+}
+
+#diff-col .right-col {
+    float:left;
+    width:30%;
+    margin-left:1%;
+    background: #D6EAF8;
+    height: 500px;
+    padding: 15px;
+}
+
+.bluetext {
+    color: blue;
+}
+
+figure{
+    float:left;
+    width:27%;
+    font-size:15pt;
+    margin-right:1%;
+    text-align:center;
+}
