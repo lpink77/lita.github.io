@@ -2,39 +2,65 @@
 <html>
 
 <head>
+    <link href=css/buoyancy.css rel="stylesheet" type="text/css" />
+
     <title>Bouyancy Force Calculation</title>
 </head>
 
 <body>
-    <h1>Bouyancy Force</h1>
-    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/7/74/Buoyancy.svg/220px-Buoyancy.svg.png" />
-    <p>Bouyancy force is an upward force exerted by a fluid that opposes the weight of an immersed object.
-        <br/>Achimedes' principle states that the upward buoyant force that is exerted on a body immersed in a fluid, whether fully or partially submerged, is equal to the weight of the fluid that the body displaces and acts in the upward direction at the centre of mass of the displaced fluid</p>
+    <h1>BOUYANCY FORCE</h1>
+    <div id="intro">
+        <p>Bouyancy force is an upward force exerted by a fluid that opposes the weight of an immersed object.
+            <br/>Achimedes' principle states that the upward buoyant force that is exerted on a body immersed in a fluid, whether fully or partially submerged, is equal to the weight of the fluid that the body displaces and acts in the upward direction at the centre of mass of the displaced fluid</p>
+    </div>
+<figure>
+    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/7/74/Buoyancy.svg/220px-Buoyancy.svg.png" style="margin-left:100px"/>
+    </figure>
 
-    <h1>Bouyancy Force Calculator</h1>
-    <form>
-        Volume of object (in m<sup>3</sup>):
-        <input type="number" name="volume" min="1" max="1000">
-        <br/> Density of object :
-        <select name="objdensity">
-            <option value="wood">Wood 600 kg/m<sup>3</sup></option>
-            <option value="steel">Plastic 2000 kg/m<sup>3</sup></option>
-        </select>
-        <br/> Type of liquid :
-        <br/>
-        <input type="radio" name="liqdensity" value="oil">Oil 800 kg/m<sup>3</sup>
-        <br/>
-        <input type="radio" name="liqdensity" value="water">Water 1000 kg/m<sup>3</sup>
-        <br/> What to calculate :
-        <br/>
-        <input type="checkbox" name="calculate" value="volimm">Volume object in the water
-        <br/>
-        <input type="checkbox" name="calculate" value="force">Bouyancy Force
-        <br/>
-    </form>
-    <script language="javascript">
-        var volb = form.volume.value;
-        document.write('voulume of object is ' + volb);
+    <div id="wrap">
+        <form id="buoyForce">
+            <fieldset>
+                <legend>Bouyancy Force Calculator</legend>
+                <label>Volume of object (in m<sup>3</sup>) : </label>
+                <input type="number" id="volume" name="volume" required>
+                <br/>
+                <p></p>
+                <label>Density of the object : </label>
+                <select id="objDensity" name="objDensity">
+                    <option value="600">Wood 600 kg/m<sup>3</sup></option>
+                    <option value="2000">Plastic 2000 kg/m<sup>3</sup></option>
+                </select>
+                <br/>
+                <p></p>
+                <label>Density of the fluid : </label>
+                <input type="radio" name="liqDensity" value="800">Oil 800 kg/m<sup>3</sup>
+                <br/>
+                <input type="radio" name="liqDensity" value="1000">Water 1000 kg/m<sup>3</sup>
+                <br/>
+
+                <input type="button" name="calculate" value="Calculate" onclick="calculate();">
+            </fieldset>
+            <br/>
+            <label> The Bouyancy Force (in Newton) :
+                <input type="text" id="force">
+            </label>
+        </form>
+    </div>
+
+
+    <script type="text/javascript">
+        function calculate() {
+            var obDensity = document.buoyForce.objDensity.value;
+            var volObject = document.buoyForce.volume.value;
+            var liqDensity = document.buoyForce.liqDensity.value;
+            if (obDensity > liqDensity) {
+                var volImm = volObject;
+            } else {
+                var volImm = obDensity / liqDensity * volObject;
+            }
+            var force = volImm * 10 * liqDensity;
+            document.getElementById(“force”).innerHTML = result;
+        }
     </script>
 </body>
 

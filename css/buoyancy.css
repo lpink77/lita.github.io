@@ -1,0 +1,66 @@
+body {
+    background-color: lightblue;
+    padding:10px;
+}
+
+h1 {
+    background-image: url(http://www.walldevil.com/wallpapers/w15/blue-wind.jpg);
+    background-size: cover;
+    font-family: Verdana;
+    font-size: 48px;
+    color: navy;
+    text-align: center;
+    overflow-y;
+}
+
+#intro {
+    font-family: Verdana;
+    font-size: 20px;
+}
+
+figure{
+    margin-left: 200px;
+    display: flex;
+    flex-wrap: wrap;
+    float: left;
+
+}
+#wrap{
+	width:400px;
+	margin: auto;
+	text-align:left;
+	margin-top:8px;
+	padding:5px;
+	background:lightblue;
+    font-family:AvenirLTStd, Arial, Helvetica, sans-serif;
+	font-size:13px;    
+    line-height:16px;
+    float: left;
+}
+
+#wrap fieldset {
+	margin:10px;
+	padding:20px;
+    -moz-border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -khtml-border-radius: 10px;
+    border-radius: 10px;
+    border-color: blue;
+}
+
+#wrap legend{
+	font-size:16px;
+	font-family:Georgia, "Times New Roman", Times, serif;
+	color:#000;
+	font-weight:bold;
+	font-style:italic;
+    padding-bottom:10px;
+    text-align: center;
+}
+
+#wrap label{
+	display:block;
+	font-size:12px;
+	color:#000;
+    font-weight:bold;
+}
