@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Contact Form</title>
+    <link rel="stylesheet" href="css/contact%20form.css" type="text/css" media="screen">
+
+    <script type="text/javascript">
+        function tosubmit() {
+            var name = document.getElementById("name").value;
+            var email = document.getElementById("email").value;
+            var subject = document.getElementById("subject").value;
+            var comment = document.getElementById("comment").value;
+
+
+            localStorage.setItem("name", name);
+            localStorage.setItem("email", email);
+            localStorage.setItem("subject", subject);
+            localStorage.setItem("comment", comment);
+
+            return true;
+        }
+    </script>
+
+
+</head>
+
+<body>
+    <div class="cover">
+        <h2 class="contact">Contact Me</h2>
+        <form name="contactform" id="contactform" onsubmit="tosubmit()" action="confirm.html">
+            <p class="contact">
+                <label>Name</label>
+            </p>
+            <input id="name" name="name" required="" tabindex="1" type="text">
+
+            <p class="contact">
+                <label for="email">Email</label>
+            </p>
+            <input id="email" name="email" placeholder="example@domain.com" required="" tabindex="2" type="email">
+
+            <p class="contact">
+                <label for="Subject">Subject</label>
+            </p>
+            <input id="subject" name="subject" required="" tabindex="2" type="text">
+
+            <p class="contact">
+                <label for="comment">Your Message</label>
+            </p>
+            <textarea name="comment" id="comment" required="" tabindex="4"></textarea>
+            <br>
+
+            <input name="submit" id="submit" tabindex="5" value="Send Message" type="submit">
+        </form>
+    </div>
+
+
+
+</body>
+
+</html>

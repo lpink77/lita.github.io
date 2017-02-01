@@ -27,16 +27,16 @@
 
                 <label>Density of the object : </label>
                 <select id="objDensity" name="objDensity">
-                    <option value="600">Wood 600 kg/m<sup>3</sup></option>
-                    <option value="2000">Plastic 2000 kg/m<sup>3</sup></option>
+                    <option value=600>Wood 600 kg/m<sup>3</sup></option>
+                    <option value=2000>Plastic 2000 kg/m<sup>3</sup></option>
                 </select>
                 <br/>
                 <p></p>
 
                 <label>Density of the fluid : </label>
-                <input type="radio" name="liqDensity" value="800">Oil 800 kg/m<sup>3</sup>
+                <input type="radio" name="liqDensity" value=800>Oil 800 kg/m<sup>3</sup>
                 <br/>
-                <input type="radio" name="liqDensity" value="1000">Water 1000 kg/m<sup>3</sup>
+                <input type="radio" name="liqDensity" value=1000>Water 1000 kg/m<sup>3</sup>
                 <br/>
 
                 <input type="button" name="calculate" value="Calculate" onclick="calcForce()">
@@ -48,20 +48,24 @@
         </form>
     </div>
 
-    <script type="text/javascript">
+    <script type = "text/javascript">
         function calcForce() {
             var obDensity = buoyForce.objDensity.value;
             var volObject = buoyForce.volume.value;
             var liqDensity = buoyForce.liqDensity.value;
-            if (obDensity > liqDensity) {
+            
+            console.log ("obDensity", obDensity);
+            console.log ("liqDensity", liqDensity);
+            
+	        if (Number(obDensity) > Number(liqDensity)) {
                 var volImm = volObject;
+                console.log ("lebih besar");
             } else {
                 var volImm = obDensity / liqDensity * volObject;
             }
             var force = volImm * 10 * liqDensity;
-            document.getElementById("force").value = force;
+	    document.getElementById("force").value = force;
         }
-
     </script>
 </body>
 

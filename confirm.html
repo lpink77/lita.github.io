@@ -1,0 +1,23 @@
+<html>
+
+<head>
+    <script>
+        function init() {
+            var name = localStorage.getItem("name");
+            var email = localStorage.getItem("email");
+            var subject = localStorage.getItem("subject");
+            var comment = localStorage.getItem("comment");
+
+            document.write("your name = " + name);
+            document.write("<br> your email =" + email);
+            document.write("<br> your subject =" + subject);
+            document.write("<br> your message =" + comment);
+        }
+    </script>
+</head>
+
+<body onload="init();">
+
+</body>
+
+</html>
