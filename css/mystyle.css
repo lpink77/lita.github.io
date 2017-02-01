@@ -1,63 +1,40 @@
-body{
-    background-color:lightblue;
+body {
+    background-color: lightblue;
 }
 
-h1{
-    background-image: url(http://www.walldevil.com/wallpapers/w15/blue-wind.jpg);
-    background-size: cover;
-    font-family: Verdana;
-    font-size: 48px;
-    color: navy;
+ul.topnav {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+
+
+/* Float the list items side by side */
+ul.topnav li {
+    float: right;
+}
+
+
+/* Style the links inside the list items */
+ul.topnav li a {
+    display: inline-block;
+    color: cadetblue;
     text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    transition: 0.3s;
+    font-size: 17px;
 }
 
-#intro{
-    font-family: Verdana;
-    font-size: 20px;
-}
-    
-#diff-col{
-    font-family: "Trebuchet MS";
-    font-size: 16px;
-    -webkit-column-count: 3; /*Chrome , Safari, Opera */
-    -moz-column-count: 3; /*Firefox */
-    column-count: 3;
-    -webkit-column-gap: 10px;
-    -moz-column-gap: 10px; /*Firefox*/
-    column-gap: 10px;
-    
+
+/* Change background color of links on hover */
+ul.topnav li a:hover {
+    background-color: skyblue;
+    color: white;
 }
 
-#diff-col .left-col{
-    background: #FADBD8; 
-    height: 500px;
-    padding: 15px;
-}
-
-#diff-col .mid-col{
-    background: #EBDEF0;
-    height: 500px;
-    padding: 15px;
-}
-
-#diff-col .right-col{
-    background: #D6EAF8;
-    height: 500px;
-    padding: 15px;
-}
-
-.bluetext {
-    color: blue;
-}
-
-table {
-    font-family: "Trebuchet MS";
-    font-size: 16px;
-    border-spacing: 20px; 
-    text-align: center;
-}
-
-.centered-table {
-    margin-left: auto;
-    margin-right: auto;
+figure {
+    margin-left: 150px;
+    margin-top: 30px;
 }
