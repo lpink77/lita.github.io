@@ -3,3 +3,8 @@
     color: coral;
 }
 
+.carousel .one {
+    background: url(image/physicswall.jpg);
+    background-size: cover;
+    -moz-background-size: cover;
+}
