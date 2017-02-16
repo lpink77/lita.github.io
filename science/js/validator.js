@@ -19,4 +19,5 @@ function validate() {
         contactform.subject.focus();
         return false;
     }
+    alert("your message has been sent. we'll contact you shortly. thanks :)");
 }
